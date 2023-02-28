@@ -351,7 +351,7 @@ section.hero .home-text {
 /* Benefits of joinig Us */
 #benefitsOfJoiningUs {
     /* border: 2px solid black; */
-    height: 45vmax;
+    height: 55vmax;
     width: 100%;
     margin-top: 4rem;
 }
@@ -929,7 +929,7 @@ section.hero .home-text {
 
 /* Show Off Page Section */
 #showoffPage {
-    height: 75vmax;
+    height: 45vmax;
     width: 98.5vw;
     /* border: 2px solid black; */
 }
@@ -1023,7 +1023,7 @@ section.hero .home-text {
 }
 
 #showoffPage>#showOffPage2>.ourSponsers>#sponsersLogoArea {
-    height: 60%;
+    height: 30%;
     width: 100%;
     /* border: 2px solid green; */
 }
@@ -1098,15 +1098,16 @@ section.hero .home-text {
 
 /*  FAQ's Page */
 #faqPage {
-    height: 45vmax;
+    height: 50vmax;
     width: 100vw;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
-/* 
+
+
 #faqPage>#faqPageInline {
     height: 100%;
     width: 100%;
-    background-color: #1b75e3;
+    background-color: #fafbfd;
     color: #010101 !important;
 }
 
@@ -1118,6 +1119,70 @@ section.hero .home-text {
     align-items: center;
     flex-direction: column;
 }
+
+.faqcontainer{
+width: 100%;
+max-width: 80rem;
+margin: 0 auto;
+padding: 0 1.5rem;
+}
+.accordion-item {
+    background-color: #ffffff;
+    border-radius: 4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+.accordion-link{
+    font-size: 1.6rem;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color: #16ac9d;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.accordion-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+}
+.accordion-link .ion-md-remove {
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212838;
+    transition: max-height 650ms ;
+}
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p{
+    color: rgba(255,255,255,.6);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+.accordion-item:target .answer{
+    max-height: 20rem;
+}    
+.accordion-item:target .accordion-link .ion-md-add{
+    display: none;
+}
+.accordion-item:target .accordion-link .ion-md-remove {
+    display: block;
+} 
 
 #faqPage>#faqPageInline>#faqHeading .UnderLineForTxt {
     width: 1.5%;
@@ -1160,8 +1225,9 @@ section.hero .home-text {
     -moz-box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
 }
 
-#faqPage .accordion-button{
-    border: 2px solid rgba(233, 233, 233, 0.188);
+#faqPage .accordion-button {
+    border: 2px solid rgb(51 211 30 / 19%);
+    border-radius: 2rem;
 }
 
 #faqPage .gridEleForFaq button {
@@ -1176,7 +1242,7 @@ section.hero .home-text {
 
 #faqPage .gridEleForFaq pre {
     font-size: 1.15rem;
-} */
+}
 
 /* Contact US Page */
 #contactUs {
@@ -1407,11 +1473,19 @@ section.hero .home-text {
     }
 
     #benefitsOfJoiningUs {
-        height: 70vmax;
+        height: 85vmax;
     }
 
     #About-Page {
-        height: 120vmax;
+        height: 80vmax;
+    }
+
+    #joinTeamPage{
+        height: 80vmax;
+    }
+
+    #footerSection{
+        height: 67vmax;
     }
 
     #About-Page .UnderLineForTxt {
@@ -1438,7 +1512,7 @@ section.hero .home-text {
     }
 
     #joinUsOnPlatforms {
-        height: 150vmax;
+        height: 200vmax;
     }
 
     #About-Page>.aboutEle>#aboutImage>.imgContainer>img {
@@ -1580,17 +1654,13 @@ section.hero .home-text {
     }
 
     #joinTeamPage {
-        height: 50vmax;
+        height: 69vmax;
     }
 
     #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body>a {
         font-size: 0.7rem;
         margin-top: 0.5rem;
         padding: 0.6rem 1.7rem;
-    }
-
-    #joinUsOnPlatforms {
-        margin-top: 10rem;
     }
 
     #joinUsOnPlatforms i {
@@ -1611,7 +1681,7 @@ section.hero .home-text {
     }
 
     #benefitsOfJoiningUs {
-        height: 82vmax;
+        height: 100vmax;
     }
 
     #benefitsOfJoiningUs .benifitcont {
